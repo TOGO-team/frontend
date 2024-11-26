@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js}'],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}', // 소스 파일 경로 설정
+    './public/index.html',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -18,6 +21,7 @@ export default {
       },
       colors: {
         main: '#FF5593', // 메인컬러
+        gradation: '#FF7577',
         dropdown: 'rgba(255, 85, 147, 0.05)', // 드롭다운 선택배경
         dashboardBg: '#FFFCFC', // 대시보드 배경
         text: '#000000', // 텍스트, 로그인과 구매하기 버튼, 메인 검색창 구분선
