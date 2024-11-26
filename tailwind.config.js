@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: [
     './src/**/*.{js,jsx,ts,tsx}', // 소스 파일 경로 설정
@@ -12,6 +14,7 @@ export default {
       },
       fontFamily: {
         sans: ['Apple SD Gothic Neo', 'sans-self'],
+        nexon: ['NEXON Lv1 Gothic OTF Bold', 'sans-serif'],
       },
       fontWeight: {
         thin: 100, // Thin
