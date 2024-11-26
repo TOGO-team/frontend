@@ -68,3 +68,10 @@
       format('woff2'),
     url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo-ExtraBold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF Bold';
+  src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Nexon/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
