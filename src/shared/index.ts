@@ -3,3 +3,7 @@ export { default as EventRegisterHeader } from './ui/backgrounds/EventRegisterHe
 export { default as HostDetailHeader } from './ui/backgrounds/HostDetailHeader';
 export { default as PaymenetHeader } from './ui/backgrounds/PaymentHeader';
 export { default as TicketHostHeader } from './ui/backgrounds/TicketHostHeader';
+
+export { default as BlackButton } from './ui/BlackButton';
+export { default as ProfileImage } from './ui/ProfileImage';
+export { default as SearchBar } from './ui/SearchBar';
