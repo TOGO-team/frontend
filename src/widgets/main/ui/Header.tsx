@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlackButton, ProfileImage, SearchBar } from '../../../shared';
+import { BlackButton, ProfileImage, SearchBar } from '@/shared';
 
 const Header: React.FC = () => {
   const isLoggedIn = false;
