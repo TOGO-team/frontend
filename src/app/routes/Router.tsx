@@ -1,10 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { MAIN_ROUTES } from './routes';
 import Layout from '../Layout';
+
+import { MainPage } from '@/pages';
+
 const routesConfig = [
   {
     path: MAIN_ROUTES.main,
-    element: <></>,
+    element: <MainPage />,
     requiresAuth: false,
   },
 ];
