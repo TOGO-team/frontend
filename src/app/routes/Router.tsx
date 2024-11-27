@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { MAIN_ROUTES } from './routes';
 import Layout from '../Layout';
 
-import { MainPage } from '../../pages';
+import { MainPage } from '@/pages';
 
 const routesConfig = [
   {

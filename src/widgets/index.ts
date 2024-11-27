@@ -1,1 +1,1 @@
-export { default as Header } from './main/ui/Header';
+export { default as Header } from '@/widgets/main/ui/Header';

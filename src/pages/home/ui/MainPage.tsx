@@ -1,4 +1,4 @@
-import { Header } from '../../../widgets';
+import { Header } from '@/widgets';
 
 const MainPage = () => {
   return (
