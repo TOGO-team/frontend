@@ -16,8 +16,8 @@ const AgreementPage: React.FC = () => {
       <Header title="이용약관" onBack={() => navigate(-1)} />
       <div className="m-12">
         <div className="mb-10">
-          <p className="text-[20px] font-bold">서비스 이용을 위해</p>
-          <p className="text-[20px] font-bold">약관에 동의해 주세요.</p>
+          <p className="text-xl font-bold">서비스 이용을 위해</p>
+          <p className="text-xl font-bold">약관에 동의해 주세요.</p>
         </div>
         <AgreementList />
       </div>

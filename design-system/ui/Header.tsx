@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ title, onBack }) => {
       )}
 
       {/* 제목 */}
-      <h1 className="flex-grow text-[20px] font-bold text-center text-gray-800">{title}</h1>
+      <h1 className="flex-grow text-xl font-bold text-center text-gray-800">{title}</h1>
 
       {/* 오른쪽 공간 (뒤로가기 버튼 없을 때 공간 확보) */}
       <div className="w-4" />
