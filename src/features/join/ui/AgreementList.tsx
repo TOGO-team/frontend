@@ -5,7 +5,7 @@ const AgreementList = () => {
   const { agreements, toggleAgreement } = useAgreementStore();
 
   return (
-    <div>
+    <div className="flex flex-col gap-5">
       <AgreementCard
         title="서비스 이용 약관"
         required={true}
