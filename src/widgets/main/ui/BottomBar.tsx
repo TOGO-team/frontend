@@ -12,19 +12,19 @@ const BottomBar = () => {
         <span className="text-sm mt-2">메뉴</span>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-20 h-20">
+      <div className="flex flex-col justify-center items-center w-24 h-20">
         <img src={EventIcon} alt="EventIcon" className="w-8 h-6 md:w-10 md:h-7 object-contain" />
         <span className="text-sm mt-2">이벤트</span>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-20 h-20">
+      <div className="flex flex-col justify-center items-center w-24 h-20">
         <img src={HomeIcon} alt="HomeIcon" className="w-8 h-6 md:w-10 md:h-7 object-contain" />
         <span className="text-sm mt-2">홈</span>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-20 h-20">
-        <img src={InterestIcon} alt="InterestIcon" className="w-8 h-7 md:w-10 md:h-8 object-contain mb-1" />
-        <span className="text-sm">관심</span>
+      <div className="flex flex-col justify-center items-center w-24 h-20">
+        <img src={InterestIcon} alt="InterestIcon" className="w-8 h-7 md:w-10 md:h-9 object-contain mb-1" />
+        <span className="text-sm mb-1">관심</span>
       </div>
 
       <div className="flex flex-col justify-center items-center w-24 h-20">
