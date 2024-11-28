@@ -13,7 +13,7 @@ const AgreementCard: React.FC<AgreementCardProps> = ({ title, required, checked,
   <div className="flex items-center justify-between h-6 border-gray-300 rounded-lg">
     <div className="flex">
       <Checkbox checked={checked} onChange={onChange} label="" />
-      <div className="text-[14px]">
+      <div className="text-sm">
         {required ? '[필수] ' : '[선택] '}
         {title}
       </div>

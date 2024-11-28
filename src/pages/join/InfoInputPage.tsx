@@ -44,73 +44,74 @@ const InfoInputPage: React.FC = () => {
   console.log('isButtonEnabled:', isButtonEnabled);
 
   return (
-    <div>
+    <div className="flex flex-col h-screen w-[440px] border relative">
       <Header title="정보입력" onBack={() => window.history.back()} />
-      <div className="p-4 space-y-6">
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          {/* 이름 필드 */}
-          <Input
-            label="이름"
-            placeholder="이름 입력"
-            error={errors.name?.message}
-            {...register('name', {
-              required: '이름을 입력해 주세요.',
-              minLength: {
-                value: 2,
-                message: '이름은 최소 두 글자 이상이어야 합니다.',
-              },
-              validate: {
-                notDuplicate: value => !existingNames.includes(value) || '이미 존재하는 이름입니다.',
-              },
-            })}
-          />
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8 m-12">
+        {/* 이름 필드 */}
+        <Input
+          label="이름"
+          placeholder="이름 입력"
+          error={errors.name?.message}
+          className="text-xl"
+          {...register('name', {
+            required: '이름을 입력해 주세요.',
+            minLength: {
+              value: 2,
+              message: '이름은 최소 두 글자 이상이어야 합니다.',
+            },
+            validate: {
+              notDuplicate: value => !existingNames.includes(value) || '이미 존재하는 이름입니다.',
+            },
+          })}
+        />
 
-          {/* 연락처 필드 */}
-          <Input
-            label="연락처"
-            placeholder="숫자 입력"
-            error={errors.phone?.message}
-            {...register('phone', {
-              required: '연락처를 입력해 주세요.',
-              pattern: {
-                value: /^[0-9]{10,11}$/,
-                message: '연락처는 10~11자리 숫자여야 합니다.',
-              },
-              validate: {
-                notDuplicate: value => !existingPhones.includes(value) || '이미 존재하는 연락처입니다.',
-              },
-            })}
-          />
+        {/* 연락처 필드 */}
+        <Input
+          label="연락처"
+          placeholder="숫자 입력"
+          error={errors.phone?.message}
+          className="text-xl"
+          {...register('phone', {
+            required: '연락처를 입력해 주세요.',
+            pattern: {
+              value: /^[0-9]{10,11}$/,
+              message: '연락처는 10~11자리 숫자여야 합니다.',
+            },
+            validate: {
+              notDuplicate: value => !existingPhones.includes(value) || '이미 존재하는 연락처입니다.',
+            },
+          })}
+        />
 
-          {/* 이메일 필드 */}
-          <Input
-            label="이메일"
-            placeholder="이메일 입력"
-            type="email"
-            error={errors.email?.message}
-            {...register('email', {
-              required: '이메일을 입력해 주세요.',
-              pattern: {
-                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                message: '올바른 이메일 형식이어야 합니다.',
-              },
-              validate: {
-                notDuplicate: value => !existingEmails.includes(value) || '이미 존재하는 이메일입니다.',
-              },
-            })}
-          />
+        {/* 이메일 필드 */}
+        <Input
+          label="이메일"
+          placeholder="이메일 입력"
+          type="email"
+          error={errors.email?.message}
+          className="text-xl"
+          {...register('email', {
+            required: '이메일을 입력해 주세요.',
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+              message: '올바른 이메일 형식이어야 합니다.',
+            },
+            validate: {
+              notDuplicate: value => !existingEmails.includes(value) || '이미 존재하는 이메일입니다.',
+            },
+          })}
+        />
 
-          {/* 제출 버튼 */}
-          <div className="pt-4">
-            <Button
-              label="시작하기"
-              onClick={handleSubmit(onSubmit)}
-              disabled={!isButtonEnabled}
-              className={`${isButtonEnabled ? 'bg-blue-500 hover:bg-blue-600' : 'bg-gray-300 cursor-not-allowed'}`}
-            />
-          </div>
-        </form>
-      </div>
+        {/* 제출 버튼 */}
+        <div className="pt-4">
+          <Button
+            label="시작하기"
+            onClick={handleSubmit(onSubmit)}
+            disabled={!isButtonEnabled}
+            className="absolute h-14 w-[344px] bottom-16 left-0 right-0 mx-auto rounded-[150px]"
+          />
+        </div>
+      </form>
     </div>
   );
 };
