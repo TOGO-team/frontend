@@ -1,7 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { MAIN_ROUTES, JOIN_ROUTES } from './routes';
 import Layout from '../Layout';
-import AgreementPage from '../../pages/AgreementPage';
+import AgreementPage from '../../pages/join/AgreementPage';
+import InfoInputPage from '../../pages/join/InfoInputPage';
 const routesConfig = [
   {
     path: MAIN_ROUTES.main,
@@ -11,6 +12,11 @@ const routesConfig = [
   {
     path: JOIN_ROUTES.agreement, // 회원가입 경로 추가
     element: <AgreementPage />,
+    requiresAuth: false,
+  },
+  {
+    path: JOIN_ROUTES.infoInput, // 회원가입 경로 추가
+    element: <InfoInputPage />,
     requiresAuth: false,
   },
 ];

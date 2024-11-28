@@ -1,4 +1,3 @@
-// shared/ui/Button.tsx
 import React from 'react';
 
 interface ButtonProps {
@@ -13,8 +12,8 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false, class
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`w-full py-2 px-4 rounded-lg text-white font-semibold transition 
-        ${disabled ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600'} 
+      className={`py-2 px-4 text-white font-semibold transition 
+        ${disabled ? 'bg-gray-400 cursor-not-allowed' : 'bg-main hover:bg-mainDark'} 
         ${className}`}
     >
       {label}

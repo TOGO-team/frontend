@@ -3,6 +3,7 @@ export default {
   content: [
     './src/**/*.{js,jsx,ts,tsx}', // 소스 파일 경로 설정
     './public/index.html',
+    './design-system/**/*.{js,jsx,ts,tsx}', // custom-components 디렉토리
   ],
   theme: {
     extend: {
@@ -21,6 +22,7 @@ export default {
       },
       colors: {
         main: '#FF5593', // 메인컬러
+        mainDark: '#FF3680', // 메인컬러(다크)
         gradation: '#FF7577',
         dropdown: 'rgba(255, 85, 147, 0.05)', // 드롭다운 선택배경
         dashboardBg: '#FFFCFC', // 대시보드 배경

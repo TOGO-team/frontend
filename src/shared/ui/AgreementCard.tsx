@@ -10,12 +10,15 @@ interface AgreementCardProps {
 }
 
 const AgreementCard: React.FC<AgreementCardProps> = ({ title, required, checked, onChange }) => (
-  <div className="flex items-center justify-between p-4 mb-2 border border-gray-300 rounded-lg">
-    <div>
-      <strong className={required ? 'text-red-500' : 'text-gray-500'}>{required ? '[필수] ' : '[선택] '}</strong>
-      {title}
+  <div className="flex items-center justify-between h-6 border-gray-300 rounded-lg">
+    <div className="flex">
+      <Checkbox checked={checked} onChange={onChange} label="" />
+      <div className="text-[14px]">
+        {required ? '[필수] ' : '[선택] '}
+        {title}
+      </div>
     </div>
-    <Checkbox checked={checked} onChange={onChange} label="" />
+    <button>&gt;</button>
   </div>
 );
 
