@@ -44,13 +44,16 @@ const InfoInputPage: React.FC = () => {
   console.log('isButtonEnabled:', isButtonEnabled);
 
   return (
-    <div className="flex flex-col h-screen w-[440px] border relative">
+    <div className="relative flex flex-col w-full h-screen border ">
       <Header title="정보입력" onBack={() => window.history.back()} />
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8 m-12">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col gap-8 m-20 mx-10 my-12 sm:mx-8 sm:my-10 md:mx-10 md:my-12 lg:mx-12 lg:my-16"
+      >
         {/* 이름 필드 */}
         <Input
           label="이름"
-          placeholder="이름 입력"
+          placeholder="이름"
           error={errors.name?.message}
           className="text-xl"
           {...register('name', {
@@ -68,7 +71,8 @@ const InfoInputPage: React.FC = () => {
         {/* 연락처 필드 */}
         <Input
           label="연락처"
-          placeholder="숫자 입력"
+          placeholder={`"-" 없이 번호만 입력해주세요`}
+          type="tel"
           error={errors.phone?.message}
           className="text-xl"
           {...register('phone', {
@@ -86,7 +90,7 @@ const InfoInputPage: React.FC = () => {
         {/* 이메일 필드 */}
         <Input
           label="이메일"
-          placeholder="이메일 입력"
+          placeholder="이메일"
           type="email"
           error={errors.email?.message}
           className="text-xl"
@@ -101,17 +105,13 @@ const InfoInputPage: React.FC = () => {
             },
           })}
         />
-
-        {/* 제출 버튼 */}
-        <div className="pt-4">
-          <Button
-            label="시작하기"
-            onClick={handleSubmit(onSubmit)}
-            disabled={!isButtonEnabled}
-            className="absolute h-14 w-[344px] bottom-16 left-0 right-0 mx-auto rounded-[150px]"
-          />
-        </div>
       </form>
+      <Button
+        label="시작하기"
+        onClick={handleSubmit(onSubmit)}
+        disabled={!isButtonEnabled}
+        className="absolute h-14 sm:h-12 md:h-14 lg:h-14 max-w-90 bottom-16 left-0 right-0 mx-10 sm:mx-8 md:mx-10 lg:mx-12 rounded-[150px]"
+      />
     </div>
   );
 };

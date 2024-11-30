@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      width: {
+        90: '22.5rem',
+      },
       fontFamily: {
         sans: ['Apple SD Gothic Neo', 'sans-self'],
       },
@@ -37,6 +40,11 @@ export default {
         gray3: '#EEEEEE', // 회색3
         gray4: '#D9D9D9', // 회색4
       },
+    },
+    screens: {
+      sm: '350px', // 작은 화면
+      md: '436px', // 중간 화면
+      lg: '512px', // 큰 화면
     },
   },
   plugins: [],
