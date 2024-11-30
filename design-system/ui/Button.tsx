@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, disabled = false, class
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`py-2 px-4 text-white font-semibold transition text-base
+      className={`py-2 px-4 text-white font-semibold transition text-base sm:text-xs md:text-sm lg:text-base
         ${disabled ? 'bg-gray-400 cursor-not-allowed' : 'bg-main hover:bg-mainDark'} 
         ${className}`}
     >

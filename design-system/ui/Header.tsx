@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ title, onBack }) => {
   return (
     <header
-      className="flex items-center justify-between px-4 h-16 w-full max-w-[440px] border-b"
+      className="flex items-center justify-between w-full h-16 px-4 border-b"
       style={{ margin: '0 auto' }} // 중앙 정렬을 위한 스타일
     >
       {/* 뒤로 가기 버튼 (필요한 경우 표시) */}
@@ -21,7 +21,9 @@ const Header: React.FC<HeaderProps> = ({ title, onBack }) => {
       )}
 
       {/* 제목 */}
-      <h1 className="flex-grow text-xl font-bold text-center text-gray-800">{title}</h1>
+      <h1 className="flex-grow text-xl font-bold text-center text-gray-800 sm:text-base md:text-lg lg:text-xl">
+        {title}
+      </h1>
 
       {/* 오른쪽 공간 (뒤로가기 버튼 없을 때 공간 확보) */}
       <div className="w-4" />
