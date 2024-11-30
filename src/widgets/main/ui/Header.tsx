@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlackButton, ProfileImage, SearchBar } from '@/shared';
+import { BlackButton, ProfileImage, SearchBar } from '../../../shared';
 
 const Header: React.FC = () => {
   const isLoggedIn = false;
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       </div>
       {!isLoggedIn ? (
         <div className="mr-3 md:mr-5 text-sm md:text-md">
-          <BlackButton width="w-16" height="h-9" text="로그인" />
+          <BlackButton width="w-16" height="h-10" text="로그인" />
         </div>
       ) : (
         <div className="mr-3 md:mr-5">

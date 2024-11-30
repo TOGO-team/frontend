@@ -1,4 +1,4 @@
-import { BottomBar, Header } from '@/widgets';
+import { BottomBar, Header } from '../../../widgets';
 
 const MainPage = () => {
   return (

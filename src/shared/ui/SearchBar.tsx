@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchIcon from '@public/assets/Search.svg';
+import SearchIcon from '/assets/Search.svg';
 
 interface SearchBarProps {
   width: string;
