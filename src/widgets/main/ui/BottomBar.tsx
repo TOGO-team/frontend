@@ -1,8 +1,8 @@
-import MenuIcon from '@public/assets/MenuIcon.svg';
-import EventIcon from '@public/assets/EventIcon.svg';
-import HomeIcon from '@public/assets/HomeIcon.svg';
-import InterestIcon from '@public/assets/InterestIcon.svg';
-import MypageIcon from '@public/assets/MypageIcon.svg';
+import MenuIcon from '/assets/MenuIcon.svg';
+import EventIcon from '/assets/EventIcon.svg';
+import HomeIcon from '/assets/HomeIcon.svg';
+import InterestIcon from '/assets/InterestIcon.svg';
+import MypageIcon from '/assets/MypageIcon.svg';
 
 const BottomBar = () => {
   return (
