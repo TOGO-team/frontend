@@ -3,7 +3,8 @@ import { MAIN_ROUTES, JOIN_ROUTES } from './routes';
 import Layout from '../Layout';
 import AgreementPage from '../../pages/join/AgreementPage';
 import InfoInputPage from '../../pages/join/InfoInputPage';
-import { MainPage } from '../../pages';
+import MainPage from '../../pages/home/ui/MainPage';
+
 const routesConfig = [
   {
     path: MAIN_ROUTES.main,
