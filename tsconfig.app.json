@@ -22,5 +22,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "src/features/event-manage/model/eventCreation/.ts",
+    "src/shared/ui/SubHeader.tsx",
+    "src/features/event-manage/ui/DatePicker.tsx"
+  ]
 }
